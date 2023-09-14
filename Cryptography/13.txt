@@ -1,0 +1,12 @@
+-> Flag: picoCTF{not_too_bad_of_a_problem} <-
+
+Points: 100
+
+Tags: picoCTF 2019, Cryptography
+AUTHOR: ALEX FULTON/DANIEL TUNITIS
+
+Description
+Cryptography can be easy, do you know what ROT13 is? cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}
+
+Solve: 
+Using Rot 13 to decrypt
