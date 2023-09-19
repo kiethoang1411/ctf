@@ -1,0 +1,13 @@
+-> Flag: picoCTF{d15a5m_t34s3r_f6c48608} <- 
+
+Points: 20
+
+Description
+
+Can you look at the data in this binary: static (static)? This BASH script (ltdis.sh) might help!
+
+Solve: 
+Download static file and shell file
+Run terminal with command line: ./ltdis.sh static 
+
+The bash shell will out 2 file one is static_ltdis.trings.text, and the other is static.ltdis.x86_64.txt

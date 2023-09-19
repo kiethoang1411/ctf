@@ -1,0 +1,13 @@
+-> Flag: picoCTF{4p0110_1n_7h3_h0us3_67c6cc96} <- 
+
+Points: 10
+
+Description
+
+Python scripts are invoked kind of like programs in the Terminal... Can you run this Python script (ende.py) using this password (pw.txt) 
+to get the flag (flag.txt.en)?
+
+Solve: 
+
+In terminal run python3 ende.py -d flag.txt.en 
+then enter the password from pw.txt

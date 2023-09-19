@@ -1,0 +1,10 @@
+-> Flag: picoCTF{61}
+
+Description
+
+What is 0x3D (base 16) in decimal (base 10)?
+
+Solve:
+
+hexadecimal (base 16): 0x3D
+decimal (base 10): 61

@@ -1,0 +1,11 @@
+-> Flag: picoCTF{5tRIng5_1T_7f766a23} <- 
+
+Points: 100
+
+Description
+
+Can you find the flag in file without running it?
+
+Solve
+Terminal: strings stringss | grep picoCTF 
+
