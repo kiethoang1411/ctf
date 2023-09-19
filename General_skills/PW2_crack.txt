@@ -1,0 +1,13 @@
+-> Flag: picoCTF{tr45h_51ng1ng_502ec42e} <- 
+
+Points: 100
+
+Description
+Can you crack the password to get the flag?
+Download the password checker here (level2.py) and you'll need the encrypted flag (level2.flag.txt.enc) in the same directory too.
+
+Solve:
+Open python script, we can see 
+user_pw = input("Please enter correct password for flag: ")
+if( user_pw == chr(0x33) + chr(0x39) + chr(0x63) + chr(0x65) ): -> it is hexadecimal (33396365)
+then convert hexadecimal to ASCII, we get 39ce 

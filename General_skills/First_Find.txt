@@ -1,0 +1,10 @@
+-> Flag: picoCTF{f1nd_15_f457_ab443fd1} <- 
+
+Points: 100
+
+Description
+Unzip this archive and find the file named 'uber-secret.txt'
+Download zip file
+
+Solve
+Unzip folder -> files -> adequate_books -> more_books -> .secret -> deeper_serects -> deepest_serects -> uber-serect.txt (Flag)

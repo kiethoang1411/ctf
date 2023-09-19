@@ -1,0 +1,41 @@
+-> Flag: picoCTF{m45h_fl1ng1ng_2b072a90} <-
+
+Points: 100
+
+Description
+Can you crack the password to get the flag?
+Download the password checker here(level3.py) and you'll need the encrypted flag (level3.flag.txt.enc) and the hash (level3.hash.bin) in the same directory too.
+There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.
+
+Solve: 
+Try every password. or add some codes to do it automatically. Here the code:
+
+
+flag_enc = open('level3.flag.txt.enc', 'rb').read()
+correct_pw_hash = open('level3.hash.bin', 'rb').read()
+
+def hash_pw(pw_str):
+# same code
+
+def check_passwords(password_list, correct_hash):
+    for password in password_list:
+        password_hash = hash_pw(password)
+        if password_hash == correct_hash:
+            return password  # Return the correct password
+    return None  # If no match is found
+
+
+# The correct password hash and list of possibilities
+correct_pw_hash = open('level3.hash.bin', 'rb').read()
+pos_pw_list = ["6997", "3ac8", "f0ac", "4b17", "ec27", "4e66", "865e"]
+
+# Check the list of passwords
+correct_password = check_passwords(pos_pw_list, correct_pw_hash)
+
+if correct_password:
+    print("Correct password found:", correct_password)
+else:
+    print("No correct password found in the list.")
+
+def level_3_pw_check():
+# same code

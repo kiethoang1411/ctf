@@ -1,0 +1,9 @@
+-> Flag: picoCTF{7h3_r04d_l355_7r4v3l3d_ae0b80bd} <- 
+
+Description
+Find the flag in the Python script!
+Download Python script (serpentine.py)
+
+Solve: 
+Add print_flag() function to b 
+

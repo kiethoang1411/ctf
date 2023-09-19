@@ -1,0 +1,38 @@
+-> Flag: picoCTF{h45h_sl1ng1ng_36e992a6} <- 
+
+Points: 100
+
+Description
+Can you crack the password to get the flag?
+Download the password checker here(level5.py) and you'll need the encrypted flag(level5.flag.txt.enc) and the hash(level5.hash.bin) in the same directory too. 
+Here's a dictionary(dictionary.txt) with all possible passwords based on the password conventions we've seen so far.
+
+Solve:
+Add some line of codes 
+
+def check_passwords(password_list, correct_hash):
+# same codes
+
+# The correct password hash and list of possibilities
+correct_pw_hash = open('level5.hash.bin', 'rb').read()
+
+# Read passwords from a text file
+with open('dictionary.txt', 'r') as file:
+    pos_pw_list = [line.strip() for line in file]
+
+def find_password():
+    for user_pw in pos_pw_list:
+        user_pw_hash = hash_pw(user_pw)
+        
+        if user_pw_hash == correct_pw_hash:
+            print("Correct password found: " + user_pw)
+            return
+    
+    print("No correct password found in the list.")
+
+find_password()
+
+def level_5_pw_check():
+# same codes
+
+--> password: 9581

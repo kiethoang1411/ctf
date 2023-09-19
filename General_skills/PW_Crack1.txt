@@ -1,0 +1,12 @@
+-> Flag: picoCTF{545h_r1ng1ng_56891419} <- 
+
+Description
+Can you crack the password to get the flag?
+Download the password checker here (level1.py) and you'll need the encrypted flag (level1.flag.txt.enc) in the same directory too.
+
+Solve
+Open level1.py we can see 
+
+user_pw = input("Please enter correct password for flag: ")
+if( user_pw == "691d"):
+-> run the script and enter 691d 

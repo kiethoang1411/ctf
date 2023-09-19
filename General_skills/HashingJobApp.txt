@@ -1,0 +1,10 @@
+-> Flag: <-
+
+Points: 100
+
+Description
+If you want to hash with the best, beat this test!
+nc saturn.picoctf.net 53638
+
+Solve:
+Conect to picoCTF server port 53638, hash the word between ' ', if fail, try again until we can break the hash (see the flag)

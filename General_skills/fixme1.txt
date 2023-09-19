@@ -1,0 +1,11 @@
+-> Flag: picoCTF{1nd3nt1ty_cr1515_182342f7} <- 
+
+Points: 100
+
+Description
+Fix the syntax error in this Python script to print the flag.
+Download Python script
+
+Solve: 
+Download fixme1.py, the error is in print statement sing quotation does not escape, add one more \' 
+
