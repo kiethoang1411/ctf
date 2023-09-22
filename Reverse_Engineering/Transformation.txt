@@ -1,0 +1,10 @@
+-> Flag: picoCTF{16_bits_inst34d_of_8_0ddcd97a} <- 
+
+Points: 10
+
+Description
+I wonder what this really is... enc(灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸弰摤捤㤷慽) ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
+
+Solve:
+I use hint, so it tells me find some decoders online, so I think about Cyberchef, using magic to detect which encoded with intensive option,
+Then I found Encode_text('UTF-16BE (1201)') has the flag 

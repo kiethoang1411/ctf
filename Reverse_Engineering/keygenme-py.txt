@@ -1,0 +1,84 @@
+-> Flag: picoCTF{1n_7h3_|<3y_of_75fc1081} <-
+
+Points: 30 
+
+keygenme-trial.py 
+
+Solve: 
+
+I notice that the some parts of the key already seen 
+
+username_trial = "MORTON"
+bUsername_trial = b"MORTON"
+
+key_part_static1_trial = "picoCTF{1n_7h3_|<3y_of_"
+key_part_dynamic1_trial = "xxxxxxxx"       <<<------------------ This one is the part I need to find 
+key_part_static2_trial = "}"
+
+I also notice that they check index of positions (the hash256) 4,5,3,6,2,7,1,8
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[4]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[5]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[3]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[6]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[2]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[7]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[1]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[8]:
+            return False
+
+
+
+        return True
+
+
+
+Then I write python script to get the last part 
+
+import hashlib
+import base64
+
+
+import hashlib
+
+keys = [4,5,3,6,2,7,1,8]
+username_trial =  b"MORTON"
+username_hash = hashlib.sha256(username_trial).hexdigest()
+
+final_keys = ""
+
+for key in keys:
+	final_keys+=username_hash[key]
+
+print(final_keys)
+
+I got 75fc1081 
+then I combine it 
