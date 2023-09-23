@@ -1,0 +1,11 @@
+-> Flag: picoCTF{the_m3tadata_1s_modified} <- 
+
+Points: 10
+
+Description
+Files can always be changed in a secret way. Can you find the flag? cat.jpg
+
+Solve: 
+I am using this website to check strings of image: https://fotoforensics.com/
+Then I notice that long characters "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9" could be a base64. Then I decode it 
+and get the flag 
